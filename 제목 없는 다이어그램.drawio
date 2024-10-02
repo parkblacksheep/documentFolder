@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
+  <diagram name="페이지-1" id="2INJlCRODnHQ78YZ1GeX">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-1" value="DataBase" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="690" y="270" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-2" value="JpaRepository" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-3" value="EtityManager&lt;div&gt;(JPA Core Interface&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="OGGjmIci3zSP-2pJGWoG-3" target="OGGjmIci3zSP-2pJGWoG-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="380" as="sourcePoint" />
+            <mxPoint x="460" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-5" value="extends" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="OGGjmIci3zSP-2pJGWoG-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OGGjmIci3zSP-2pJGWoG-6" target="OGGjmIci3zSP-2pJGWoG-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-8" value="implements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OGGjmIci3zSP-2pJGWoG-7">
+          <mxGeometry x="-0.175" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-6" value="Hibernate&lt;div&gt;(Session APi)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-16" value="save()&lt;div&gt;findAll()&lt;/div&gt;&lt;div&gt;delete()&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="260" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-17" value="hibernate&lt;div&gt;(JPA 구현체)&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="270" y="290" as="geometry">
+            <mxPoint x="-210" y="113" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-18" value="JPA 인터페이스&amp;nbsp;&lt;div&gt;모듈&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="260" y="140" as="geometry">
+            <mxPoint x="-210" y="113" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-19" value="DataSource&lt;div&gt;(Database Connection)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OGGjmIci3zSP-2pJGWoG-20" target="OGGjmIci3zSP-2pJGWoG-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OGGjmIci3zSP-2pJGWoG-20" target="OGGjmIci3zSP-2pJGWoG-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-26" value="Session 획득" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OGGjmIci3zSP-2pJGWoG-25">
+          <mxGeometry x="0.1811" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-20" value="HikariCP&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-21" value="ConnectionPool" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="420" y="357" as="geometry" />
+        </mxCell>
+        <mxCell id="OGGjmIci3zSP-2pJGWoG-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OGGjmIci3zSP-2pJGWoG-19" target="OGGjmIci3zSP-2pJGWoG-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
